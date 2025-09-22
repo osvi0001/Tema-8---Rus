@@ -7,7 +7,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 a {
     color: white;
 
@@ -18,15 +17,10 @@ a:visited {
 a:hover {
     color: #6F86FF;
 }
-
 body {
     background-color: rgb(233, 233, 233);
     font-family: sans-serif;
 }
-
-
-
-/* off-screen-menu */
 .off-screen-menu {
     background-color:  rgb(34, 37, 49);
     height: 100vh;
@@ -49,19 +43,11 @@ body {
 .off-screen-menu li{
     padding-top: 50px;
 }
-
-
-
-/* nav */
 nav {
     padding: 1rem;
     display: flex;
     background-color: rgb(34, 37, 49);
 }
-
-
-
-/* ham menu */
 .ham-menu {
     height: 50px;
     width: 40px;
@@ -98,4 +84,28 @@ nav {
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.p-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    margin-top:10px; 
+}
+.prd{
+    border: 2px solid black;
+    max-width: 200px;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: white;
+}
+.prd p{
+ text-align: center;
+}
+.pic{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;   
 }
