@@ -228,6 +228,10 @@ h1 {
     background-color: white;
 }
 
+.logo{
+    display: none;
+}
+
 .size p:hover{
     background: #000000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
@@ -277,8 +281,40 @@ h1 {
     transform: translateY(-5px); 
     transition: all 0.3s ease; 
 }
+.sold-out {
+  position: absolute;
+  margin: 10px;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+p{
+    text-align: start;
+}
+.sale-badge {
+  position: absolute;
+  margin: 10px;
+  background: rgb(255, 0, 0);
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
 
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
 
+.new-price {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
 @media only screen and (min-width: 759px) {
     .home-section {
         display: grid;
@@ -398,6 +434,12 @@ h1 {
         transform: translateY(0px); 
         transition: all 0.1s ease; 
     }
+    .logo{
+    margin-bottom: -35px;
+    margin-top: 10PX;
+    margin-left: 10px;
+    display: block;
+}
 }
    
 
