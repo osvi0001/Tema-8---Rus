@@ -3,9 +3,22 @@ const category = params1.get("category");
 
 const productListContainer = document.querySelector(".p-img");
 
+document
+  .querySelectorAll(".filters button")
+  .forEach((knap) => knap.addEventListener("click", showFiltered));
+
+function showFiltered() {
+  console.log("showFiltered");
+}
+
+let allData;
+
 fetch(`https://kea-alt-del.dk/t7/api/products?limit=100&category=${category}`)
   .then((res) => res.json())
-  .then((data) => showProducts(data));
+  .then((data) => {
+    allData = data;
+    showProducts(allData);
+  });
 
 function showProducts(products) {
   let markup = "";
