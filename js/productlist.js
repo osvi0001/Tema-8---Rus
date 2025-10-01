@@ -3,7 +3,7 @@ const category = params1.get("category");
 
 const productListContainer = document.querySelector(".p-img");
 
-fetch(`https://kea-alt-del.dk/t7/api/products?limit=20&category=${category}`)
+fetch(`https://kea-alt-del.dk/t7/api/products?limit=100&category=${category}`)
   .then((res) => res.json())
   .then((data) => showProducts(data));
 
