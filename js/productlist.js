@@ -8,7 +8,13 @@ document
   .forEach((knap) => knap.addEventListener("click", showFiltered));
 
 function showFiltered() {
-  console.log("showFiltered");
+  const gender = this.dataset.gender;
+  if (gender == "All") {
+    showProducts(allData);
+  } else {
+    const udsnit = allData.filter((product) => product.gender === gender);
+    showProducts(udsnit);
+  }
 }
 
 let allData;
@@ -56,5 +62,5 @@ function showProducts(products) {
       </div>`;
   });
 
-  productListContainer.innerHTML += markup;
+  productListContainer.innerHTML = markup;
 }
