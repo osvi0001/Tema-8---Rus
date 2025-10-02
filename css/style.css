@@ -171,7 +171,6 @@ nav {
     transform: translateY(-5px);
     transition: 0.3s ease;
     cursor: pointer;
-
 }
 
 h1 {
@@ -320,6 +319,44 @@ p{
   font-weight: bold;
   font-size: 18px;
 }
+
+.filters{
+    margin: auto;
+    text-align: center;
+}
+.sortering{
+    margin: auto;
+    text-align: center;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(176, 163, 129);
+    font-family: 'Times New Roman';
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    color: #ffffff;
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: 2;
+}
+button.active {
+  background-color: rgb(176, 163, 129);
+  color: rgb(27, 27, 27);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.5); 
+}
+
+
+
 @media only screen and (min-width: 759px) {
     .categories {
         display: grid;
@@ -456,6 +493,17 @@ p{
 }
 p{
     text-align: center;
+}
+
+.filters{
+    text-align: start;
+    margin-left: 100px;
+}
+.sortering{
+    margin-right: 100px;
+}
+.sort{
+    display: flex;
 }
 }
    
